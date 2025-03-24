@@ -1,0 +1,92 @@
+﻿@page "/admin-dashboard"
+@inject NavigationManager Navigation
+
+<div class="dashboard-container">
+    <div class="sidebar">
+        <div class="profile-pic">&#128100;</div>
+        <div class="form-group"><label>Admin ID:</label><input type="text" class="form-control" /></div>
+        <div class="form-group"><label>Name:</label><input type="text" class="form-control" /></div>
+        <div class="form-group"><label>Phone No:</label><input type="text" class="form-control" /></div>
+        <div class="form-group"><label>Email ID:</label><input type="text" class="form-control" /></div>
+        <div class="form-group"><label>Date Of Joining:</label><input type="text" class="form-control" /></div>
+        <div class="form-group"><label>Date Of Birth:</label><input type="text" class="form-control" /></div>
+        <div class="form-group"><label>Current Address:</label><input type="text" class="form-control" /></div>
+        <div class="form-group"><label>Permanent Address:</label><input type="text" class="form-control" /></div>
+    </div>
+    <div class="main-content">
+        <button class="dashboard-btn">LIST OF ALL EMPLOYEES</button>
+        <button class="dashboard-btn">PAYROLL</button>
+        <button class="dashboard-btn">ADD EMPLOYEE</button>
+        <button class="dashboard-btn">REMOVE EMPLOYEE</button>
+        <button class="dashboard-btn">SEARCH AN EMPLOYEE</button>
+        <button class="dashboard-btn">ISSUES</button>
+        <button class="dashboard-btn reports">REPORTS</button>
+    </div>
+</div>
+
+<style>
+    .dashboard-container {
+        display: flex;
+        height: 100vh;
+        background: linear-gradient(to right, #a0c4ff, #f8f9fa);
+    }
+
+    .sidebar {
+        width: 25%;
+        background: #a0b0ff;
+        padding: 20px;
+        text-align: left;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+        background: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        margin: auto;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 5px;
+        background: #e0e0e0;
+        border: none;
+        border-radius: 4px;
+    }
+
+    .main-content {
+        width: 75%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .dashboard-btn {
+        width: 250px;
+        height: 60px;
+        background: linear-gradient(to right, #2a72d6, #1f3c72);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .reports {
+        width: 270px;
+    }
+</style>

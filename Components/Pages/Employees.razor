@@ -1,0 +1,43 @@
+﻿@page "/employees"
+@inject Data.AppDbContext DbContext
+@using BlazorApp2.Models
+@using Microsoft.EntityFrameworkCore
+
+
+<h3>Employee List</h3>
+
+@if (employees == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var employee in employees)
+            {
+                <tr>
+                   
+                    
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Employee>? employees;
+
+    protected override async Task OnInitializedAsync()
+    {
+        employees = await DbContext.Employees.ToListAsync();
+    }
+}

@@ -1,0 +1,43 @@
+﻿body {
+    background-color: lightgrey;
+}
+.login-container {
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+.login-header {
+    background-color: #d3d3d3;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.login-box {
+    background-color: #a0b0ff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-around;
+}
+
+.login-btn, .forgot-btn {
+    background-color: #446b8d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
